@@ -40,7 +40,8 @@ This project presents a **interpretable, face recognition pipeline** using image
 
 
 1. Clone The repository
-```bash
+```1. Clone The repository
+bash
 git clone https://github.com/yourusername/face-recognition-classical.git
 cd face-recognition-classical
 
