@@ -109,19 +109,14 @@ Optionally: confidence or distance
 Auto-handles “Unknown” if below threshold
 
 📊 Results
-💯 Accuracy: 98.82% across 5 folds
-🧪 Real-world test images achieved >82% accuracy with preprocessing
-📉 Misclassifications on unseen data were addressed via:
-Denoising
-Confidence thresholding
-Pipeline replication during inference
-
+Accuracy: 98.82% across 5 folds
+Real-world test images achieved >82% accuracy with preprocessing
 
 
 🧑‍💻 Contributors
 Ayyan Sohail — @ayyansohail
 Sajjad Ahmed
-Sammee Mudassar
+Samee Mudassar
 
 
 
