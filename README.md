@@ -36,15 +36,14 @@ This project presents a **interpretable, face recognition pipeline** using image
 
 ---
 
-##  Setup Instructions
+##  Details
 
-### 1. Clone the Repository
-
+1. Clone The repository
 ```bash
 git clone https://github.com/yourusername/face-recognition-classical.git
 cd face-recognition-classical
 
-### 2. Install Required Packages
+2. Install Required Packages
 bash
 Copy
 Edit
@@ -56,7 +55,7 @@ Copy
 Edit
 pip install numpy opencv-python scikit-image scikit-learn matplotlib
 
-### 3. Prepare Dataset
+3. Prepare Dataset
 Organize face images like this:
 
 bash
@@ -74,15 +73,11 @@ Images must be:
 Grayscaled
 Resized to 100x100
 Faces cropped (using Haar cascades)
-<img width="940" height="394" alt="image" src="https://github.com/user-attachments/assets/a702e35a-6701-44d9-8767-6265a0dbca3c" />
-
 
 🔬 Feature Extraction
 Local Binary Patterns (LBP): captures micro-patterns of facial texture
-<img width="880" height="631" alt="image" src="https://github.com/user-attachments/assets/9b7734a4-5ecb-4acc-b866-a6ce8345faca" />
 
 Histogram of Oriented Gradients (HOG): encodes gradient direction changes
-<img width="875" height="633" alt="image" src="https://github.com/user-attachments/assets/fdd5f418-a03a-4d2c-9e47-a487433b42f1" />
 
 Gaussian Blur: reduces image noise for better feature stability
 LBP + HOG Combined: concatenated into one unified vector
@@ -92,11 +87,9 @@ Saved as .npy files for efficient reuse in model training
 Classifier: KNeighborsClassifier(n_neighbors=3)
 Validation: Stratified 5-Fold CV for balanced testing
 Average Accuracy: 98.82%
-<img width="772" height="863" alt="image" src="https://github.com/user-attachments/assets/4421020a-b6ba-4eaf-b8fe-a36f9f0c612f" />
 
 Feature Vector Shape: 4366
 Confusion Matrix: Provides per-class insight
-<img width="940" height="853" alt="image" src="https://github.com/user-attachments/assets/f6b2d6c3-5520-4ee1-a356-49c08c020d04" />
 
 
 🖥️ GUI Interface
@@ -121,8 +114,6 @@ Auto-handles “Unknown” if below threshold
 Denoising
 Confidence thresholding
 Pipeline replication during inference
-<img width="940" height="710" alt="image" src="https://github.com/user-attachments/assets/6a6f1898-3551-47d8-a17b-2ecf978452a2" />
-<img width="940" height="583" alt="image" src="https://github.com/user-attachments/assets/81d8bc06-75d4-4c51-9ed7-33f7f88b029b" />
 
 
 
